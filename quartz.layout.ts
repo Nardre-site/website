@@ -8,8 +8,12 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      RootMe: "https://www.root-me.org/Nardre",
+      Codeforce: "https://codeforces.com/profile/Nardre",
+      LeetCode: "https://leetcode.com/u/Nardre/",
+      Kattis: "https://open.kattis.com/users/nardre",
+      HackerRank: "https://www.hackerrank.com/profile/nqrdre",
+      GitHub: "https://github.com/Nardre"
     },
   }),
 }
@@ -34,14 +38,17 @@ export const defaultContentPageLayout: PageLayout = {
           Component: Component.Search(),
           grow: true,
         },
-        { Component: Component.Darkmode() },
-        { Component: Component.ReaderMode() },
+        { Component: Component.Darkmode() }
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      title: "Write-ups",
+      folderClickBehavior: "collapse",
+      useSavedState: true,
+    }),
   ],
   right: [
-    Component.Graph(),
+    // Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
