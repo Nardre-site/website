@@ -1,5 +1,5 @@
 ---
-title: Me
+title: About Me
 ---
 I'm Nardre, I spent most of my time doing Competitive Programming and spending most of it doing Reverse Engineering now.
 
