@@ -8,13 +8,13 @@ Execices found on LeetCode, Codeforce and Kattis.
 
 ![[image1b.png]]
 
-![[image2.png]]
+![[Neuronal Network/pendulum_images/image2.png]]
 
-![[image3.png]]
+![[Neuronal Network/pendulum_images/image3.png]]
 
 ![[image4.png]]
 
-![[image5.png]]
+![[Competitive Programming/Favorites Exercices images/image5.png]]
 
 ![[image6.png]]
 
