@@ -28,16 +28,16 @@ The architecture is a simple fully connected feedforward network:
 
 The cost function is the mean squared error between the output and the one-hot encoded label.
 
-## Training — Backpropagation
+## Training Backpropagation
 
 The network is trained using stochastic gradient descent with backpropagation.
 
 For each mini-batch of images:
 
-1. Forward pass — compute activations layer by layer
-2. Output error — compute the gradient of the cost with respect to the output
-3. Backpropagate — propagate the error backwards through the layers using the chain rule
-4. Update — adjust weights and biases in the direction that reduces the cost
+1. Forward pass: compute activations layer by layer
+2. Output error: compute the gradient of the cost with respect to the output
+3. Backpropagate: propagate the error backwards through the layers using the chain rule
+4. Update: adjust weights and biases in the direction that reduces the cost
 
 ![[Neuronal Network/Handwritten Digit Recognition images/image1.png]]
 
@@ -49,7 +49,7 @@ A pygame interface lets you browse through test images and see the network's pre
 
 ## Results
 
-After training on the full 60,000 image dataset, the network reaches around 95% accuracy on the test set — a solid result for a network this simple, trained entirely from scratch.
+After training on the full 60,000 image dataset, the network reaches around 95% accuracy on the test set, a solid result for a network this simple, trained entirely from scratch.
 ![[Neuronal Network/Handwritten Digit Recognition images/image2.png]]
 
 ## Technical Stack
