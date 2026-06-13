@@ -7,6 +7,7 @@ I'm Nardre, I spent most of my time doing Competitive Programming and spending m
 - 07/06/2026 - [[Dotnet malware - DNSPY]]: C#/dotNet Stager. ⭐
 - 01/06/2026 - [[Shellcode - scdbg]]: Shellcode Dropper. ⭐
 - 29/05/2026 - [[Docm Docx - oledump]]: Docx macro POC. ⭐
+- 15/05/2026 - [[Go - gdb script]]: la routine - hackropole intro 2026 ⭐⭐⭐
 - 30/04/2026 - [[Sikomode]]: Nim Stealer for Windows. ⭐⭐
 - 01/08/2025 - [[Handwritten Digit Recognition]]: neural network with backpropagation. ⭐⭐⭐
 - 01/08/2025 - [[Inverted Pendulum]]: neural network with genetic algorithm. ⭐⭐
