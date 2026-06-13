@@ -8,9 +8,9 @@ Execices found on LeetCode, Codeforce and Kattis.
 
 ![[image1b.png]]
 
-![[Neuronal Network/pendulum_images/image2.png]]
+![[Competitive Programming/Favorites Exercices images/image2.png]]
 
-![[Neuronal Network/pendulum_images/image3.png]]
+![[Competitive Programming/Favorites Exercices images/image3.png]]
 
 ![[Competitive Programming/Favorites Exercices images/image4.png]]
 
