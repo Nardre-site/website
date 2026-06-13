@@ -12,17 +12,17 @@ Execices found on LeetCode, Codeforce and Kattis.
 
 ![[Neuronal Network/pendulum_images/image3.png]]
 
-![[image4.png]]
+![[Competitive Programming/Favorites Exercices images/image4.png]]
 
 ![[Competitive Programming/Favorites Exercices images/image5.png]]
 
-![[image6.png]]
+![[Competitive Programming/Favorites Exercices images/image6.png]]
 
-![[image7.png]]
+![[Competitive Programming/Favorites Exercices images/image7.png]]
 
-![[image8.png]]
+![[Competitive Programming/Favorites Exercices images/image8.png]]
 
-![[image9.png]]
+![[Competitive Programming/Favorites Exercices images/image9.png]]
 
 ![[image10a.png]]
 
@@ -30,19 +30,19 @@ Execices found on LeetCode, Codeforce and Kattis.
 
 ![[image10c.png]]
 
-![[image11.png]]
+![[Competitive Programming/Favorites Exercices images/image11.png]]
 
-![[image12.png]]
+![[Competitive Programming/Favorites Exercices images/image12.png]]
 
-![[image13.png]]
+![[Competitive Programming/Favorites Exercices images/image13.png]]
 
-![[image14.png]]
+![[Competitive Programming/Favorites Exercices images/image14.png]]
 
-![[image15.png]]
+![[Competitive Programming/Favorites Exercices images/image15.png]]
 
-![[image16.png]]
+![[Competitive Programming/Favorites Exercices images/image16.png]]
 
-![[image17.png]]
+![[Competitive Programming/Favorites Exercices images/image17.png]]
 
 ![[image18.png]]
 
