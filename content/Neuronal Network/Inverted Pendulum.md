@@ -51,7 +51,7 @@ Over generations, the population converges toward networks that can balance the 
 
 ## Progression
 1st generation:
-![[Neuronal Network/Handwritten Digit Recognition images/image1.png]]
+![[Neuronal Network/pendulum_images/image1.png]]
 
 5th generation:
 ![[Neuronal Network/pendulum_images/image2.png]]
