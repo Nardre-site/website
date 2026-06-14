@@ -1,7 +1,7 @@
 # la routine - hackropole intro 2026
 
 The sample for this reverse engineering challenge can be found on [Hacropole](https://hackropole.fr/fr/challenges/reverse/fcsc2026-reverse-la-routine/).
-In this write-up, we will use a GDB script to solve it."
+In this write-up, we will use a GDB script to solve it.
 ![[CTF/Go - gdb script/image1.png]]
 
 ---
@@ -28,7 +28,7 @@ Because Go is a high-level language, the binary includes a significant amount of
 ---
 
 At the end of the `main.main` function, we find an input scan from `stdin`, followed by a conditional check and a print statement, confirming our observations from the initial dynamic analysis.
-![[CTF/Go - gdb script/image4.png]]
+![[CTF/Go - gdb script/image15.png]]
 
 ---
 
@@ -44,22 +44,25 @@ There are three distinct return paths:
 Let's focus on the primary verification logic.
 The application calls `internal/bytealg.Compare`, passing `main.expected` and an unknown buffer as arguments.
 
-![[CTF/Go - gdb script/image7.png]]
-![[CTF/Go - gdb script/image8.png]]
+![[CTF/Go - gdb script/image16.png|512]]
 ![[CTF/Go - gdb script/image9.png]]
 
 ---
 
 Now for the core algorithm: the function appears to transform our input before comparing it to the `main.expected` array we identified earlier.
 
+![[CTF/Go - gdb script/image17.png]]
+
 Let's solve this problem dynamically.
-![[CTF/Go - gdb script/image11.png]]
+
+---
+
 # dynamic analysis
 
 For the dynamic analysis, we will use a GDB script.
 
 We have identified a few functions that might be useful:
-1) a function to calculate pie address (though it is redundant here since PIE is disabled.) .
+1) a function to calculate pie address (though it is redundant here since PIE is disabled) .
 ```python
 def pie_calc_address(binja_address):  
    # exe_base = 0x555555554000  
@@ -113,12 +116,13 @@ Let's set a breakpoint at the compare function.
 python pie_break(0x004a698d) # compare function break
   
 python pie_print(0x004a698a, "0x004a698a rax = {$rax, %s}")  # print expected
-python pie_print(0x004a698a, "0x004a698a rdi = {$rdi, %s}")  # print our transformed flag (not in rsi)
+python pie_print(0x004a698a, "0x004a698a rdi = {$rdi, %s}")  # print our transformed flag
 python pie_print(0x004a698a, "0x004a698a call internal/bytealg.Compare")  
 run <<< FCSC{fake_flag.}
 ```
 ![[CTF/Go - gdb script/image10.png]]
 ![[CTF/Go - gdb script/image12.png|541]]
+
 We discovered that the first five characters of the transformed input match the prefix of the expected flag (`FSCS{`).
 
 This indicates that the algorithm processes and transforms our input character by character, independently. Consequently, we can brute-force the flag one character at a time by comparing the output of each attempt against the `main.expected` array.
@@ -154,13 +158,13 @@ def brute_force():
 ```
 
 ![[CTF/Go - gdb script/image14.png]]
+
 FCSC{GoLanG_......................._P4TTerNs!!!}
 
 ---
 
 Here is the full script.
 ```python
-
 set sysroot /
 set disable-randomization on
 set confirm off
@@ -170,7 +174,7 @@ set debuginfod enabled off
 set print inferior-events off
 set print thread-events off
 
-file ./la_routine
+file ./la-routine
 
 # python function
 python
