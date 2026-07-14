@@ -39,7 +39,7 @@ For each mini-batch of images:
 3. Backpropagate: propagate the error backwards through the layers using the chain rule
 4. Update: adjust weights and biases in the direction that reduces the cost
 
-![[Neuronal Network/Handwritten Digit Recognition images/image1.png]]
+![[Project/Handwritten Digit Recognition images/image1.png]]
 
 The weights are updated after each mini-batch, scaled by the learning rate divided by the batch size.
 
@@ -50,7 +50,7 @@ A pygame interface lets you browse through test images and see the network's pre
 ## Results
 
 After training on the full 60,000 image dataset, the network reaches around 95% accuracy on the test set, a solid result for a network this simple, trained entirely from scratch.
-![[Neuronal Network/Handwritten Digit Recognition images/image2.png]]
+![[Project/Handwritten Digit Recognition images/image2.png]]
 
 ## Technical Stack
 

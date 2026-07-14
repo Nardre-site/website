@@ -51,19 +51,19 @@ Over generations, the population converges toward networks that can balance the 
 
 ## Progression
 1st generation:
-![[Neuronal Network/pendulum_images/image1.png]]
+![[Project/pendulum images/image1.png]]
 
 5th generation:
-![[Neuronal Network/pendulum_images/image2.png]]
+![[Project/pendulum images/image2.png]]
 
 20th generation:
-![[Neuronal Network/pendulum_images/image3.png]]
+![[Project/pendulum images/image3.png]]
 
 100th generation:
 ![[imgae4.png]]
 
 1000th generation:
-![[Neuronal Network/pendulum_images/image5.png]]
+![[Project/pendulum images/image5.png]]
 
 ## Results
 
