@@ -3,7 +3,8 @@ title: About Me
 ---
 I'm Nardre, I spent most of my time doing Competitive Programming and spending most of it doing Reverse Engineering now.
 
-- 14/07/2026 - [[Map fullstack]]: fullstack map with Nuxt/Vue \***NEW**\*
+- 14/07/2026 - [[Map fullstack]]: google maps with Nuxt/Vue \***NEW**\*
+- 07/07/2026 - [[IDE fullstack]]: LeetCode copy with React/Java \***NEW**\*
 - 13/06/2026 - [[APK malware - MobSF - jadx]]: APK Stager.
 - 07/06/2026 - [[Dotnet malware - DNSPY]]: C#/dotNet Stager.
 - 01/06/2026 - [[Shellcode - scdbg]]: Shellcode Dropper.
