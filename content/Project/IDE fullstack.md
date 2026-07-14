@@ -40,7 +40,7 @@ Built with React + TypeScript / Vite, React Router for navigation, and Tailwind 
 * `api/`: typed fetch wrappers for auth, progress and LLM endpoints, attaching the JWT to authenticated requests
 
 # Technical Stack
-* Backend: Java, Quarkus, JAX-RS, JWT (SmallRye/MicroProfile), Lombok
+* Backend: Java, Quarkus, JAX-RS, JWT, Lombok
 * Frontend: React, TypeScript, Vite, React Router, Tailwind CSS, shadcn/ui, CodeMirror, Pyodide
 * Auth: JWT-based, role-based access control
 * Containerized with Docker / docker-compose
