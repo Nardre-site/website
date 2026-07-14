@@ -44,7 +44,7 @@ Execices found on LeetCode, Codeforce and Kattis.
 
 ![[Competitive Programming/Favorites Exercices images/image17.png]]
 
-![[image18.png]]
+![[Competitive Programming/Favorites Exercices images/image18.png]]
 
 ![[image19.png]]
 
