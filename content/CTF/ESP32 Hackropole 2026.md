@@ -8,6 +8,7 @@ The challenge sample is available on [Hacropole](https://hackropole.fr/en/challe
 # Introduction
 In this write-up, we will install the `esp32-flash-image-loader` extension in ghidra.
 Since the target is an ESP32, we will solve this challenge statically.
+
 ![[extensif_0.jpg|300]]
 
 ---
@@ -48,6 +49,7 @@ Next, launch Ghidra, go to `File` -> `Install Extensions`, and enable it. If it 
 ---
 
 Ghidra should now recognize the format and language.
+
 ![[extensif_4.png]]
 
 ---
@@ -82,13 +84,15 @@ The return address is utilized when a `ret` instruction is called.
 
 The image below can be found in [Ghidra: Fix unaff_ via Set Register Values... by 0x6d696368](https://youtu.be/aWIcd2BRItc)
 The calling convention details are available in the [xtensa documentation pdf](https://github.com/espressif/xtensa-isa-doc).
-![[extensif_11.png]]![[extensif_12.png]]
+![[extensif_11.png]]
+![[extensif_12.png]]
 
 ---
 
 The first `unaff_retaddr` is the address of the `modif_expected_flag` return instruction: `0x400d60ef`.
 The other `unaff_retaddr` values are the address of the `algo_rec` return instruction: `0x400d6108`.
-![[extensif_13.png]]![[extensif_14.png]]
+![[extensif_13.png]]
+![[extensif_14.png]]
 
 ---
 
