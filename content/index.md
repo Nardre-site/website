@@ -3,6 +3,7 @@ title: About Me
 ---
 I'm Nardre, I spent most of my time doing Competitive Programming and spending most of it doing Reverse Engineering now.
 
+- 24/07/2026 - [[Terminal00]]: angusnicneven interactive map. ⭐
 - 22/07/2026 - [[Wannacry]]:  ransomware wrestool. ⭐
 - 15/07/2026 - [[Mach-O 64-bit x86_64 Emulator]]: emulator.
 - 31/06/2026 - [[Unity IL2CPP - SHUTLOCK]]:  FlappyBug 2026.

@@ -47,6 +47,7 @@
     "d3": "^7.9.0",
     "esbuild-sass-plugin": "^3.6.0",
     "flexsearch": "^0.8.205",
+    "force-graph": "^1.51.4",
     "github-slugger": "^2.0.0",
     "globby": "^16.1.0",
     "gray-matter": "^4.0.3",
@@ -110,5 +111,10 @@
     "prettier": "^3.8.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
+  },
+  "allowScripts": {
+    "esbuild@0.27.2": true,
+    "sharp@0.34.5": true,
+    "@parcel/watcher@2.5.4": true
   }
 }

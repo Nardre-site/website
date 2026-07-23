@@ -5,7 +5,9 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [
+      Component.Terminal00() // Terminal00
+  ],
   footer: Component.Footer({
     links: {
       RootMe: "https://www.root-me.org/Nardre",
