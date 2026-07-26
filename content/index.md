@@ -1,7 +1,7 @@
 ---
 title: About Me
 ---
-I'm Nardre, I spent most of my time doing Competitive Programming and spending most of it doing Reverse Engineering now.
+I’m Nardre. I used to spend most of my time doing Competitive Programming, but I mostly do Reverse Engineering now.
 
 - 24/07/2026 - [[Terminal00]]: angusnicneven interactive map. ⭐
 - 22/07/2026 - [[Wannacry]]:  ransomware wrestool. ⭐
