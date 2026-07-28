@@ -1,7 +1,7 @@
 The shellcode below is an alphanumeric quine written in 32-bit x86 assembly. I'll explain how I created it, and you can find the complete source code on my GitHub. [github](https://github.com/Nardre/AlphanumericQuineShellcode)
 
 ```asm
-ZYQRQPj0X40PZAIYfHf5a7f1A0f1A5YRX@@@@BPQjDRTUVWaSHSXKSHQuineByNardre
+ZYQRQPj0X40PZ7AIYfHf5a7f1A0f1A5YBRXBBBRQjDPTUVWaSHSXKSHQuineByNardre
 ```
 
 ---
@@ -44,7 +44,7 @@ We can obtain small values using:
 - `pop eax`
 - `xor eax, <imm32>`
 - `inc r32`, `dec r32`
-![[shellcode10.png]]
+![[shellcode15.png]]
 
 ---
 
@@ -105,7 +105,7 @@ We can retrieve command line arguments (`argv`) using:
 # Alphanumeric Quine Shellcode
 
 With all this information, we can now write our Alphanumeric Quine shellcode.
-![[shellcode15.png]]
+![[shellcode16.png]]
 
 ---
 
@@ -153,5 +153,5 @@ gcc -m32 -Wall -Wextra -no-pie loader.c -o loader
 
 ./loader "$(cat quine.bin)" > out
 diff quine.bin out
-# ZYQRQPj0X40PZAIYfHf5a7f1A0f1A5YRX@@@@BPQjDRTUVWaSHSXKSHQuineByNardre
+# ZYQRQPj0X40PZ7AIYfHf5a7f1A0f1A5YBRXBBBRQjDPTUVWaSHSXKSHQuineByNardre
 ```

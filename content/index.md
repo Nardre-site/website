@@ -3,6 +3,7 @@ title: About Me
 ---
 I’m Nardre. I used to spend most of my time doing Competitive Programming, but I mostly do Reverse Engineering now.
 
+- 28/07/2026 - [[Alphanumeric Quine Shellcode]]: ⭐⭐
 - 24/07/2026 - [[Terminal00]]: angusnicneven interactive map. ⭐
 - 22/07/2026 - [[Wannacry]]:  ransomware wrestool. ⭐
 - 15/07/2026 - [[Mach-O 64-bit x86_64 Emulator]]: emulator.
