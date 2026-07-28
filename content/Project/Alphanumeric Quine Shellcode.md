@@ -26,6 +26,7 @@ For a deeper explanation of quine shellcode, feel free to check out the [arsouye
 # Alphanumeric
 Here is the list of our allowed instructions.
 This table is taken from the [phrack by rix](https://phrack.org/issues/57/15) be sure to check it out for a more explanation.
+
 ![[shellcode4.png]]
 
 ---
@@ -35,6 +36,7 @@ We can zero out `EAX` using:
 - `push <imm8>`
 - `pop eax`
 - `xor al, <imm8>`
+
 ![[shellcode6.png]]
 
 ---
@@ -44,6 +46,7 @@ We can obtain small values using:
 - `pop eax`
 - `xor eax, <imm32>`
 - `inc r32`, `dec r32`
+
 ![[shellcode15.png]]
 
 ---
@@ -52,6 +55,7 @@ We can set any value where the most significant bytes are zero by using:
 - `push <imm32>`
 - `pop eax`
 - `xor eax, <imm32>`
+
 ![[shellcode8.png]]
 
 ---
@@ -61,6 +65,7 @@ We can set any value where the most significant bytes are non zero by using:
 - `push <imm32>`
 - `pop eax`
 - `xor eax, <imm32>`
+
 ![[shellcode9.png]]
 
 ---
@@ -69,6 +74,7 @@ We can move values between registers using:
 - `push eax`, `push ebx`, `push ecx`, `push edx`, `push esp`, `push ebp`, `push esi`, `push edi`
 - `pop eax`, `pop ecx`, `pop edx`
 - `popad`
+
 ![[shellcode7.png]]
 
 You can find more information about `POPAD` on [Felix Cloutier's x86 reference site](https://www.felixcloutier.com/x86/popa:popad).
@@ -80,7 +86,9 @@ We can pad our shellcode or increase its length with NOP-equivalent instructions
 - `aaa` (can cause problems)
 - `inc ecx`, `dec ecx`
 - `db "Nardre" (after exit)`
+
 ![[shellcode12.png]]
+
 ![[shellcode13.png]]
 
 ---
@@ -91,6 +99,7 @@ We can implement self modifying code as follows, which is particularly useful fo
 - `xor <r/m32>, <r32>`
 - `xor <r8>,<r/m8>`
 - `xor <r32>,<r/m32>`
+
 ![[shellcode11.png]]
 
 ---
@@ -98,6 +107,7 @@ We can implement self modifying code as follows, which is particularly useful fo
 We can retrieve command line arguments (`argv`) using:
 - `pop <r32>`
 - `push <r32>`
+
 ![[shellcode14.png]]
 
 ---
@@ -105,6 +115,7 @@ We can retrieve command line arguments (`argv`) using:
 # Alphanumeric Quine Shellcode
 
 With all this information, we can now write our Alphanumeric Quine shellcode.
+
 ![[shellcode16.png]]
 
 ---
