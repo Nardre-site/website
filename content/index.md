@@ -3,7 +3,7 @@ title: About Me
 ---
 I’m Nardre. I used to spend most of my time doing Competitive Programming, but I mostly do Reverse Engineering now.
 
-- 01/09/2026 - [NoteVX]: PT_NOTE infection to VX. ⭐⭐⭐
+- 01/09/2026 - [[NoteVX]]: PT_NOTE infection to VX. ⭐⭐⭐
 - 28/07/2026 - [[Alphanumeric Quine Shellcode]]: ⭐⭐
 - 24/07/2026 - [[Terminal00]]: angusnicneven interactive map. ⭐
 - 22/07/2026 - [[Wannacry]]:  ransomware wrestool. ⭐
