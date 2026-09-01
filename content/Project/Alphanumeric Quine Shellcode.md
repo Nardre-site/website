@@ -47,7 +47,7 @@ We can obtain small values using:
 - `xor eax, <imm32>`
 - `inc r32`, `dec r32`
 
-![[shellcode15.png]]
+![[shellcode15 1.png]]
 
 ---
 
